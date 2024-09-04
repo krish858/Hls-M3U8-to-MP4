@@ -152,10 +152,10 @@ function App() {
             />
           </div>
           <div
-            className="bg-blue-500 w-[20%] p-1 cursor-pointer"
+            className="bg-blue-500 w-[20%] p-1   cursor-pointer"
             onClick={stream}
           >
-            Convert
+            <h1>convert</h1>
           </div>
         </div>
       );
@@ -183,18 +183,18 @@ function App() {
             HlM4
           </h1>
         </div>
-        <div className="pt-16">
+        <div className="lg:mt-16">
           <p className="text-3xl mx-16 text-slate-400 text-center lg:text-5xl font-Raleway font-medium brightness-200">
             Hls(M3U8) to MP4 Converter.
           </p>
         </div>
         <Filetype />
         {Input()}
-        <div>
+        <div className="mt-16 mx-8 lg:mx-0">
           <video
             ref={videoRef}
             controls
-            className="border-2 border-slate-400 mt-16 h-[250px] w-[450px]"
+            className="border-2 border-slate-400 h-[250px] w-[450px]"
           />
         </div>
         <div className="mt-8">
